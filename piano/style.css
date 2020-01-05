@@ -1,0 +1,83 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("wallpaper.png");
+  background-size: cover;
+}
+
+.piano {
+  display: flex;
+  position: relative;
+  opacity: 0.5;
+}
+
+.key{
+  font-size: 0;
+}
+
+.white-key {
+  width: 125px;
+  height: 300px;
+  background-color:white;
+  border: 5px solid black;
+  border-radius: 0 0 5px 5px;
+  cursor: pointer;
+  outline: none;
+  margin-left: -4px;
+}
+
+.white-key.active {
+  background-color: #C0C0C0;
+}
+
+.black-key {
+  position: absolute;
+  width: 75px;
+  height: 200px;
+  cursor: pointer;
+  background-image: linear-gradient(#000000, #404040);
+  border: 5px solid black;
+  border-radius: 0 0 2px 2px;
+  outline: none;
+  
+}
+
+.black-key.active {
+  background-image: linear-gradient(#000000, #202020);
+}
+
+.Db4 {
+  left: 82px;
+}
+
+.Eb4 {
+  left: 202px;
+}
+
+.Gb4 {
+  left: 445px;
+}
+
+.Ab4 {
+  left: 565px;
+}
+
+.Bb4 {
+  left: 687px;
+}
+
+.Db5 {
+  left: 930px;
+}
+
+.Eb5 {
+  left: 1050px;
+}
